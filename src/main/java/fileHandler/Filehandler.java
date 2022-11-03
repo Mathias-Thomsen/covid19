@@ -1,15 +1,10 @@
 package fileHandler;
-
-import comparatorer.RegionComparator;
 import covid19Data.Covid19Data;
-
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
-
 public class Filehandler {
 
     public ArrayList<Covid19Data> loadData() throws IOException {
@@ -19,8 +14,6 @@ public class Filehandler {
         while(reader.hasNextLine()){
             String line = reader.nextLine();
             covid19DataArrayList.add(parseCsvLine(line));
-
-
 
         }
         return covid19DataArrayList;
