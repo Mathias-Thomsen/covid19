@@ -1,5 +1,4 @@
-import java.time.LocalDate;
-import java.util.Date;
+package covid19Data;
 
 
 public class Covid19Data {
@@ -79,6 +78,13 @@ public class Covid19Data {
     public void setDato(String dato) {
         this.dato = dato;
     }
+
+
+
+
+
+
+
 
 
 
